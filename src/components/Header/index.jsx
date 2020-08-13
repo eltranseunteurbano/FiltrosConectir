@@ -38,17 +38,17 @@ const Header = () => {
       <Logo />
       <nav className='header__nav '>
         <a href=''>
-          <img src={process.env.PUBLIC_URL + './iconos/Home.svg'} alt='Home' />
+          <img src={process.env.PUBLIC_URL + '/iconos/Home.svg'} alt='Home' />
           Inicio
         </a>
 
         <a href=''>
-          <img src={process.env.PUBLIC_URL + './iconos/Proyecto.svg'} alt='Proyecto' />
+          <img src={process.env.PUBLIC_URL + '/iconos/Proyecto.svg'} alt='Proyecto' />
           Proyectos
         </a>
 
         <a href='' className='header__nav-selected'>
-          <img src={process.env.PUBLIC_URL + './iconos/Equipo.svg'} alt='Equipo' />
+          <img src={process.env.PUBLIC_URL + '/iconos/Equipo.svg'} alt='Equipo' />
           Equipo
         </a>
       </nav>
@@ -77,17 +77,17 @@ const Header = () => {
 
         <nav className='MenuResponsive__body__menu'>
           <a href=''>
-            <img src={process.env.PUBLIC_URL + './iconos/Home.svg'} alt='Home' />
+            <img src={process.env.PUBLIC_URL + '/iconos/Home.svg'} alt='Home' />
             Inicio
           </a>
 
           <a href=''>
-            <img src={process.env.PUBLIC_URL + './iconos/Proyecto.svg'} alt='Proyecto' />
+            <img src={process.env.PUBLIC_URL + '/iconos/Proyecto.svg'} alt='Proyecto' />
             Proyectos
           </a>
 
           <a href='' className='header__nav-selected'>
-            <img src={process.env.PUBLIC_URL + './iconos/Equipo.svg'} alt='Equipo' />
+            <img src={process.env.PUBLIC_URL + '/iconos/Equipo.svg'} alt='Equipo' />
             Equipo
           </a>
         </nav>
