@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/FiltrosConectir/static/css/main.9d2ea84c.chunk.css",
+    "main.js": "/FiltrosConectir/static/js/main.ed08cd95.chunk.js",
+    "main.js.map": "/FiltrosConectir/static/js/main.ed08cd95.chunk.js.map",
+    "runtime-main.js": "/FiltrosConectir/static/js/runtime-main.531ff79a.js",
+    "runtime-main.js.map": "/FiltrosConectir/static/js/runtime-main.531ff79a.js.map",
+    "static/js/2.73a0758b.chunk.js": "/FiltrosConectir/static/js/2.73a0758b.chunk.js",
+    "static/js/2.73a0758b.chunk.js.map": "/FiltrosConectir/static/js/2.73a0758b.chunk.js.map",
+    "index.html": "/FiltrosConectir/index.html",
+    "precache-manifest.d8f4b93639d6a1dac4931953f0a1b143.js": "/FiltrosConectir/precache-manifest.d8f4b93639d6a1dac4931953f0a1b143.js",
+    "service-worker.js": "/FiltrosConectir/service-worker.js",
+    "static/css/main.9d2ea84c.chunk.css.map": "/FiltrosConectir/static/css/main.9d2ea84c.chunk.css.map",
+    "static/js/2.73a0758b.chunk.js.LICENSE.txt": "/FiltrosConectir/static/js/2.73a0758b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.531ff79a.js",
+    "static/js/2.73a0758b.chunk.js",
+    "static/css/main.9d2ea84c.chunk.css",
+    "static/js/main.ed08cd95.chunk.js"
+  ]
+}
