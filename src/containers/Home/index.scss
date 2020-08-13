@@ -1,0 +1,27 @@
+.Home {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    width: 0;
+    height: 100vh;
+    background-color: red;
+    transition: all .4s;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .Home {
+    aside {
+      width: 400px;
+    }
+  }
+}
