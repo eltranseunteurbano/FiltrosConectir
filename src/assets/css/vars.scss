@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+  --color-blue: #1B97FF;
+  --color-black: #333333;
+  --color-gray: #D8D8D8;
+  --color-white: #ffffff;
+}
+
+.appear {
+  animation-name: appearAnimation;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes appearAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.appearFromRight {
+  animation-name: appearRightAnimation;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes appearRightAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
