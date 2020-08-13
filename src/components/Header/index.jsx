@@ -11,6 +11,28 @@ const Header = () => {
 
   const [showResponsive, setShowResponsive] = React.useState(false);
 
+  //Ancho | Width
+  React.useEffect( () => {
+    function onElementWidthChange(elm, callback){
+      var lastWidth = elm.clientWidth, newWidth;
+      (function run(){
+          newWidth = elm.clientWidth;
+          if( lastWidth !== newWidth )
+              callback(newWidth)
+          lastWidth = newWidth
+          if( elm.onElementWidthChangeTimer )
+          clearTimeout(elm.onElementWidthChangeTimer)
+          elm.onElementWidthChangeTimer = setTimeout(run, 200)
+      })()
+      }
+      onElementWidthChange(document.body, function(width){
+          if(width >= 700) {
+            setShowResponsive(false);
+          }
+      });
+  }, [])
+
+
   return(
     <header className='header'>
       <Logo />
