@@ -1,0 +1,93 @@
+.BannerFindTeam {
+  width: 100%;
+
+  padding: 24px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    font-weight: bolder;
+    color: var(--color-black);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__wp{
+    width: 100%;
+    max-width: 350px;
+    background-color: var(--color-black);
+    border-radius: 10px;
+    padding: 48px 24px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      text-align: center;
+      color: var(--color-white);
+      margin-bottom: 48px;
+    }
+
+    &__flowers {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width:700px) {
+  .BannerFindTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .title {
+      text-align: left;
+    }
+
+    &__wp {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 48px;
+      position: relative;
+
+      &__text {
+        margin-bottom: 0;
+        text-align: left;
+        max-width: 300px;
+      }
+
+      &__img {
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .BannerFindTeam {
+    &__wp {
+      &__flowers {
+        display: block;
+        position: absolute;
+        right: 35%;
+        bottom: 0;
+      }
+    }
+  }
+}
