@@ -12,8 +12,7 @@
 
   aside {
     width: 0;
-    height: 100vh;
-    background-color: red;
+    display: none;
     transition: all .4s;
   }
 }
@@ -22,6 +21,7 @@
   .Home {
     aside {
       width: 400px;
+      display: block;
     }
   }
 }

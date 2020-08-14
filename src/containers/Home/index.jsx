@@ -3,25 +3,20 @@ import '../../assets/css/reset.scss';
 import '../../assets/css/vars.scss';
 import './index.scss';
 
-import Header from '../../components/Header';
 import BannerFindTeam from '../../components/BannerFindTeam';
 import Equipos from '../../components/Equipos';
+import Filters from '../../components/Filters';
 
 const Home = () => {
   return(
-    <>
-      <Header />
       <section className='Home'>
         <main>
           <BannerFindTeam />
           <Equipos />
         </main>
 
-        <aside>
-
-        </aside>
+        <Filters />
       </section>
-    </>
   )
 }
 
