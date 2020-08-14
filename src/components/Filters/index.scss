@@ -22,10 +22,17 @@
 
     h1 {
       margin-bottom: 0 !important;
+      text-align: left;
+    }
+
+    &__close {
+      display: none;
+      cursor: pointer;
     }
 
     &__clean {
-      color: red;
+      color: #FF3939;
+      cursor: pointer;
     }
   }
 
@@ -156,6 +163,36 @@
             font-weight: bolder;
           }
         }
+      }
+    }
+  }
+}
+
+.filters-responsive {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+
+  width: 100% !important;
+
+  .filters__header__close {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .filters {
+    &__header {
+      h1 {
+        text-align: center;
+      }
+
+      &__close {
+        display: flex;
+        cursor: pointer;
       }
     }
   }

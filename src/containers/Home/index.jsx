@@ -8,14 +8,18 @@ import Equipos from '../../components/Equipos';
 import Filters from '../../components/Filters';
 
 const Home = () => {
+
+  const [showFilters, setShowFilter] = React.useState(false);
+
+  console.log(showFilters)
   return(
       <section className='Home'>
         <main>
           <BannerFindTeam />
-          <Equipos />
+          <Equipos activeFilters={showFilters} toggleActiveFilters={setShowFilter} />
         </main>
 
-        <Filters />
+        <Filters activeFilters={showFilters} toggleActiveFilters={setShowFilter}/>
       </section>
   )
 }

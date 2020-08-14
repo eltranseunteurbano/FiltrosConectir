@@ -2,15 +2,18 @@ import React from 'react';
 import './index.scss';
 import Arrow from '../Arrow';
 
-const Filters = () => {
+const Filters = ({activeFilters, toggleActiveFilters}) => {
 
   const [showAdvance, setShowAdvance] = React.useState(false);
   const [showNucleos, setShowNucleos] = React.useState(true);
   const [showProcesador, setShowProcesador] = React.useState(true);
 
   return (
-    <aside className='filters'>
+    <aside className={activeFilters ? 'filters filters-responsive appear' : 'filters'}>
       <article className='filters__header'>
+        <div className='filters__header__close' onClick={() => toggleActiveFilters(!activeFilters)}>
+          <img src={process.env.PUBLIC_URL + '/iconos/Close.svg'} alt='Cerrar filtros' />
+        </div>
         <h1 className='title'>Filtro</h1>
         <p className='filters__header__clean'>Limpiar</p>
       </article>
